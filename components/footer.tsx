@@ -15,7 +15,7 @@ export function Footer() {
         {/* Brand */}
         <div>
           <Link href="/" className="inline-block">
-            <img src="/images/logo.png" alt="Art Stone" className="h-10 w-auto" />
+            <img src="/images/logo-v2.png" alt="Art Stone" className="h-10 w-auto" />
           </Link>
           <p className="mt-4 text-white/40 text-sm leading-relaxed">
             Premium stone solutions for kitchens, bathrooms, fireplaces, and

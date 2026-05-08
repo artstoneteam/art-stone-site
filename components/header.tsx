@@ -42,7 +42,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <img src="/images/logo.png" alt="Art Stone" className="h-[120px] w-auto mt-[100px] invert mix-blend-screen" />
+          <img src="/images/logo-v2.png" alt="Art Stone" className="h-[120px] w-auto mt-[100px] invert mix-blend-screen" />
         </Link>
 
         {/* Desktop Nav */}
