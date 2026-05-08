@@ -20,7 +20,7 @@ export function Hero() {
         <p className="text-[#c8a96e] tracking-[0.3em] uppercase text-sm mb-6 font-light">
           Professional Stonemasons
         </p>
-        <h1 className="font-sans text-5xl md:text-7xl lg:text-8xl font-light mb-6 tracking-tight">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-light mb-6 tracking-[0.2em]" style={{ fontFamily: 'var(--font-montserrat)' }}>
           ART STONE
           <span className="block text-[#c8a96e]">TEAM LTD.</span>
         </h1>

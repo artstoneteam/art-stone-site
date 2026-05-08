@@ -4,12 +4,6 @@ import { useState } from "react";
 
 const contacts = [
   {
-    name: "Tina",
-    role: "Sales",
-    phone: "+64 27 331 34 47",
-    email: "tina@art-stone.co.nz",
-  },
-  {
     name: "Stefan",
     role: "Technical",
     phone: "+64 22 601 60 69",
@@ -64,7 +58,7 @@ export default function ContactPage() {
               <h3 className="mt-4 font-serif text-lg font-semibold">
                 {contact.name}
               </h3>
-              <p className="text-sm text-[#c8a96e]">{contact.role}</p>
+              <p className="text-sm text-[#c8a96e]">Technical questions</p>
               <div className="mt-3 space-y-1">
                 <a
                   href={`tel:${contact.phone.replace(/\s/g, "")}`}
@@ -99,7 +93,8 @@ export default function ContactPage() {
                 />
               </svg>
             </div>
-            <h3 className="mt-4 font-serif text-lg font-semibold">General</h3>
+            <h3 className="mt-4 font-serif text-lg font-semibold">Jay</h3>
+            <p className="text-sm text-[#c8a96e]">General questions</p>
             <div className="mt-3 space-y-1">
               <a
                 href="tel:+64224107269"
@@ -146,6 +141,20 @@ export default function ContactPage() {
               <br />
               Auckland
             </p>
+          </div>
+
+          {/* Map */}
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 overflow-hidden sm:col-span-2 lg:col-span-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.5!2d174.7467!3d-36.7633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d39a5c0f3e8e1%3A0x0!2s96+Hillside+Road%2C+Wairau+Valley%2C+Auckland!5e0!3m2!1sen!2snz!4v1"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: "invert(90%) hue-rotate(180deg)", minHeight: "200px" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Art Stone location"
+            />
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display, Josefin_Sans, Montserrat, Raleway } from 'next/font/google'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import './globals.css'
@@ -15,6 +15,27 @@ const playfair = Playfair_Display({
   variable: '--font-playfair',
   subsets: ['latin'],
   weight: ['400', '700'],
+  display: 'swap',
+})
+
+const josefin = Josefin_Sans({
+  variable: '--font-josefin',
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '700'],
+  display: 'swap',
+})
+
+const montserrat = Montserrat({
+  variable: '--font-montserrat',
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '700'],
+  display: 'swap',
+})
+
+const raleway = Raleway({
+  variable: '--font-raleway',
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '700'],
   display: 'swap',
 })
 
@@ -54,7 +75,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} h-full antialiased`}
+      className={`${inter.variable} ${playfair.variable} ${josefin.variable} ${montserrat.variable} ${raleway.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans bg-[#0f0f0f] text-white">
         <Header />
